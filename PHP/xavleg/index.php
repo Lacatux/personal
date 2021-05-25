@@ -17,42 +17,39 @@
 <body>
 
   <div id="encabezado">
+
     <h1 id="tituloWeb">XAVLEG</h1>
     <a href="index.php"><img id="logo" src="images/logo.png" alt="Logo de la banda" /></a>
-    <div id="menu">
-      <ul>
-        <li class="active">
-          <a href="index.php">Inicio</a>
-        </li>
-        <li>
-          <a href="gira.html">Gira</a>
-          <ul>
-            <li><a>Gira Completa</a></li>
-            <li><a>Galería</a></li>
-            <li><a>Compra de entradas</a></li>
-          </ul>
-        </li>
-        <li>
-          <a>Miembros</a>
-        </li>
-        <li>
-          <a>Discografía</a>
-        </li>
+
+    <div class="navbar">
+      <a href="index.php">Inicio</a>
+      <div class="dropdown">
+        <button class="dropbtn">Gira
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="">Gira Completa</a>
+          <a href="">Galería</a>
+          <a href="">Compra de entradas</a>
+        </div>
+      </div>
+      <a href="">Miembros</a>
+      <a href="">Discografía</a>
+      <div class = "navbar-right">
         <?php
         if (isset($_SESSION["user"]) == false) {
-          echo "<li><a class='enlaceMenu' href='registro.php'>Registro</a></li>";
-          echo "<li><a class='enlaceMenu' href='login.php'>Login</a></li>";
+          echo "<a href='registro.php'>Registro</a>";
+          echo "<a href='login.php'>Login</a>";
         } else {
-          echo "<li><a class='enlaceMenu' href='createNoticia.php'>Crear Noticia</a></li>";
-          echo "<li><a class='enlaceMenu' href='panelNoticia.php'>Panel Noticias</a></li>";
-          echo "<li><a class='enlaceMenu' href='cerrarSesion.php'>Cerrar sesión</a></li>";
+          echo "<a  href='panelNoticia.php'>Panel Noticias</a>";
+          echo "<a href='cerrarSesion.php'>Cerrar sesión</a>";
         }
         ?>
-      </ul>
-
+      </div>
     </div>
-  </div>
 
+  </div>
+  <div id="grad1"></div>
   <div id="cuerpo">
     <h3>Noticias</h3>
     <div class="discos">
@@ -64,6 +61,7 @@
           <th>Número de canciones</th>
         </tr>
         <?php
+        /*
         $discos = getDiscos();
         $tamArray = sizeOf($discos);
         for ($i = 0; $i < $tamArray; $i++) {
@@ -73,9 +71,69 @@
             <td>" . $discos[$i]['num_canciones'] . "</td>          
             </tr>";
         }
+        */
         ?>
       </table>
     </div>
+    
+    <div>
+    <div id="noticias" class="categoria" style="color:black">
+        <h2 class="titulo">Últimas Noticias</h2>
+          <div class="post">
+            <h3>Nuevo logo</h3>
+            <img src="images/logo.jpg" alt="foto del logotipo" class="img">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eu, molestie id nullam interdum accumsan cras aenean tortor enim, ultricies imperdiet sed lectus nisl rutrum condimentum. Sapien non ligula pellentesque enim condimentum accumsan eros volutpat, luctus sollicitudin dignissim potenti convallis parturient aliquet consequat est, natoque sodales curabitur morbi sem montes arcu.
+            </p>
+
+          </div>
+          <div class="post">
+            <h3>Nuevo Merchandising</h3>
+            <img src="images/chanclas.jpg" alt="chancletas del grupo" class="img">
+            <img src="images/asiento.jpg" alt="asientos del grupo" class="img">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eu, molestie id nullam interdum accumsan cras aenean tortor enim, ultricies imperdiet sed lectus nisl rutrum condimentum. Sapien non ligula pellentesque enim condimentum accumsan eros volutpat, luctus sollicitudin dignissim potenti convallis parturient aliquet consequat est, natoque sodales curabitur morbi sem montes arcu.</p>
+          </div>
+      </div>
+
+      <div id="fechas" class="categoria" style="color:black">
+        <h2 class="titulo">Próximas fechas de gira</h2>
+        <table id="tabla" class="post">
+          <tr>
+            <td>Fever / Santana 27</td>
+            <td>19/11/2022</td>
+            <td>20.00€</td>
+          </tr>
+          <tr>
+            <td>Dabadaba</td>
+            <td>21/11/2022</td>
+            <td>20.50€</td>
+          </tr>
+          <tr>
+            <td>Razzmatazz</td>
+            <td>24/11/2022</td>
+            <td>25.00€</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="resumen" class="categoria" style="color:black">
+        <h2>Merchandising</h2>
+        <div class="resmerch">
+          <div class="floatClear">
+            <img src="images/hoodie.jpeg" alt="sudadera xavleg" class="merch">
+            <p>Sudadera de Xavleg</p>
+          </div>
+          <div class="floatClear">
+            <img src="images/cami.jpeg" alt="camiseta xavleg" class="merch">
+            <p>Camiseta de Xavleg</p>
+          </div>
+          <div class="floatClear">
+            <img src="images/manta.jpeg" alt="edredón xavleg" class="merch">
+            <p>Edredón de Xavleg con funde de almohada</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div id="pie">

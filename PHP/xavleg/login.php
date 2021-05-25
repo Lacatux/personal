@@ -16,29 +16,6 @@
     <div id="encabezado">
         <h1 id="tituloWeb">XAVLEG</h1>
         <a href="index.php"><img id="logo" src="images/logo.png" alt="Logo de la banda" /></a>
-        <div id="menu">
-            <ul>
-                <li>
-                    <a href="index.php">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Gira</a>
-                    <ul>
-                        <li><a href="">Gira Completa</a></li>
-                        <li><a href="">Galería</a></li>
-                        <li><a href="">Compra de entradas</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Miembros</a>
-                </li>
-                <li>
-                    <a href="">Discografía</a>
-                </li>
-
-            </ul>
-        </div>
-
         <div id="cuerpo">
             <form action="consultarUsuario.php" method="post">
                 <div class="container">
