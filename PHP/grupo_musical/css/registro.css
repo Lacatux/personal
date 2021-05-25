@@ -1,0 +1,27 @@
+form{
+  width: 450px;
+  margin-top: 85px;
+  margin-left: 500px;
+  margin-bottom: 30px;
+  border: 10px solid orange;
+}
+label{
+  margin: 7px;
+}
+input{
+  margin-left: 7px;
+}
+#enviar{
+  margin-top: 10px;
+}
+#cuerpo{
+  height: 370px;
+}
+#mensajeError
+{
+  display:none;
+  margin-top:70px;
+  text-align: center;
+  border: solid red;
+  color:red;
+}

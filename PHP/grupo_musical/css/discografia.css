@@ -1,0 +1,42 @@
+.discografia1{
+  float: left;
+  width: 189px;
+  height: 90px;
+  margin-right: 10px;
+}
+h3{
+  border: 2px solid black;
+  font-size: 50px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+.texto{
+  width: 890px;
+  text-align: justify;
+  font-size: 18px;
+}
+.discografia2{
+  float: right;
+  width: 547px;
+  height: 414px;
+}
+h4{
+  margin-top: 20px;
+}
+.Albunesestudio{
+  width: 1480px;
+}
+table, th, td
+{
+  width: 700px;
+  margin-left: 400px;
+  margin-top: 20px;
+  border: 2px solid black;
+  padding:10px;
+}
+th
+{
+  text-align: center;
+  background-color: #efa204fc;
+  color:black;
+}
