@@ -1,0 +1,22 @@
+h2
+{
+    margin-left:100px;
+}
+
+.noticias
+{
+  margin-left:100px;
+  margin: 3px;
+  padding:5px;
+  width: 50%;
+  left: 50%;
+  right: 50%;
+  text-align: center;
+}
+.img
+{
+  height: 180px;
+  right: 30px;
+  border: 5px solid black;
+}
+

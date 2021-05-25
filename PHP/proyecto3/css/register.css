@@ -1,0 +1,13 @@
+#infoPersonal
+{
+  display:none;
+}
+
+#mensajeError
+{
+  display:none;
+  margin-top:70px;
+  text-align: center;
+  border: solid red;
+  color:red;
+}

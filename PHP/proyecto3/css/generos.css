@@ -1,0 +1,41 @@
+.generos
+{
+  margin:25px;
+  padding:5px;
+}
+
+#cuerpo
+{
+  height: 550px;
+}
+
+.galeria
+{
+  margin:50px;
+  padding:10px;
+}
+
+.imgGaleria
+{
+  position: relative;
+  width: 260px;
+  height: 300px;
+  border: solid white 10px;
+  rotation:5deg;
+  -moz-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  margin:3px;
+  z-index: 1;
+}
+
+.imgGaleria:hover
+{
+  position: relative;
+  rotation: 0deg;
+  -moz-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+  transform:scale(1.5);
+  -webkit-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  z-index: 2;
+}

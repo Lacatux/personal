@@ -1,0 +1,25 @@
+
+table, th, td
+{
+  z-index: 100;
+  width: 700px;
+  margin-left: 400px;
+  margin-top: 20px;
+  border: 2px solid black;
+  padding:10px;
+}
+th
+{
+  text-align: center;
+  background-color: #efa204fc;
+  color:black;
+}
+.par
+{
+  background-color: #333;
+  color:white;
+}
+table tr td a{
+ text-decoration: none;
+ color: #3e3eff;
+}

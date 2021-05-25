@@ -1,0 +1,140 @@
+*
+{
+  padding:0px;
+  margin:0px;
+}
+
+body
+{
+  background-color: #878787;
+}
+
+#encabezado
+{
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  color:#6c0404;
+}
+#cuerpo
+{
+  padding-top: 10px;
+  margin-top: 50px;
+}
+#pie
+{
+  background-color: #555555;
+  width: 100%;
+  height: 75px;
+}
+
+#tituloWeb
+{
+  position: relative;
+  width: 50%;
+  left: 50px;
+  top: 13px;
+  height: 150px;
+  font-family: 'Staatliches';
+  font-size: 100px;
+}
+
+#logo
+{
+  float:right;
+  position: relative;
+  top: -167px;
+  height: 180px;
+  right: 30px;
+}
+
+#rrss
+{
+  margin-left: 45%;
+  padding:20px;
+}
+
+#rrss > span
+{
+  color:black;
+}
+.iconosSociales
+{
+  width:20px;
+  height: 20px;
+  margin: 3px;
+}
+#menu
+{
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #610d0d;
+  position: relative;
+  top: -190px;
+  width: 100%;
+}
+
+#menu ul
+{
+  list-style-type: none;
+}
+
+#menu li
+{
+  float:left;
+}
+
+#menu li a
+{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 11px 22px;
+  text-decoration: none;
+}
+
+#menu li a:hover
+{
+  background-color: #000000;
+}
+
+#menu .active
+{
+  background-color: red;
+}
+
+#menu li ul li
+{
+  display: none;
+  position: absolute;
+  position: fixed;
+  background-color: #333;
+  height: 55px;
+}
+
+#menu li:hover ul li
+{
+  display: block;
+}
+
+#menu li ul li a
+{
+  width: 110px;
+}
+
+#menu li ul li:nth-child(2)
+{
+  margin-top: 46px;
+}
+
+#menu li ul li:nth-child(3)
+{
+  margin-top: 92px;
+}
+.floatClear
+{
+  float:left;
+}
+
+
